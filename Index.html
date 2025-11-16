@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Калин — Услуги и Контакти</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#">Kalin</a>
+      <nav class="nav">
+        <a href="#about">За мен</a>
+        <a href="#services">Услуги</a>
+        <a href="#work">Портфолио</a>
+        <a href="#contact">Контакти</a>
+      </nav>
+      <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <h1>Здравейте, аз съм Калин</h1>
+        <p>Предлагам надеждни услуги, точност и бърза комуникация. Работя професионално, качествено и отговорно.</p>
+        <a class="btn" href="#contact">Свържи се с мен</a>
+      </div>
+      <div class="hero-image" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <main>
+    <section id="about" class="container about">
+      <h2>За мен</h2>
+      <p>Казвам се Калин и имам опит в различни сфери, включително логистика, опаковане, строителство и работа с клиенти. Работя прецизно и винаги изпълнявам задачите в срок.</p>
+    </section>
+
+    <section id="services" class="container services">
+      <h2>Услуги</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Услуга 1</h3>
+          <p>Описание на услуга, която можеш да предложиш.</p>
+        </div>
+        <div class="card">
+          <h3>Услуга 2</h3>
+          <p>Описание на втора услуга.</p>
+        </div>
+        <div class="card">
+          <h3>Услуга 3</h3>
+          <p>Описание на трета услуга.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="container work">
+      <h2>Портфолио</h2>
+      <div class="grid">
+        <div class="thumb">Проект 1</div>
+        <div class="thumb">Проект 2</div>
+        <div class="thumb">Проект 3</div>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Контакти</h2>
+      <p>Пиши ми — отговарям бързо.</p>
+
+      <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+        <label>
+          Име
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Имейл
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Съобщение
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="btn" type="submit">Изпрати</button>
+      </form>
+
+      <div class="contact-info">
+        <p>Тел: +359 895928848</p>
+        <p>Email: <a href="mailto:kalinpetkov06@gmail.com">kalinpetkov06@gmail.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Калин — Всички права запазени.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
